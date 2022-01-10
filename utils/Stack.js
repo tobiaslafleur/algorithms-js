@@ -1,6 +1,6 @@
- // A stack with a linkedlist implementation
- //
- // Tobias la Fleur
+// A stack with a linkedlist implementation
+//
+// Tobias la Fleur
 const Node = require('./Node.js')
 
 module.exports = () => {
@@ -8,7 +8,6 @@ module.exports = () => {
     var size = 0
 
     return {
-        functions: '',
         push: (item) => {
             let oldTop = top
             top = Node()
@@ -18,16 +17,12 @@ module.exports = () => {
         },
         pop: () => {
             if(top === undefined) throw Error('Cannot pop from an empty stack')
-            let temp = top
+            let popped = top.getValue()
             top = top.getNext()
             size -= 1
-            return temp
+            return popped
         },
-        peek: () => {
-            return top
-        },
-        size: () => {
-            return size
-        },
+        peek: () => { return top },
+        size: () => { return size },
     }
 }
