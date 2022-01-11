@@ -1,4 +1,4 @@
-// A stack with a linkedlist implementation
+// A Stack with a linkedlist implementation using Nodes
 //
 // Tobias la Fleur
 const Node = require('./Node.js')

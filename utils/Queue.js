@@ -1,11 +1,11 @@
-// A Queue with a linkedlist implementation
+// A Queue with a linkedlist implementation using Nodes
 //
 // Tobias la Fleur
 const Node = require('./Node.js')
 
 module.exports = () => {
-    var first = undefined
-    var last = undefined
+    var first
+    var last
     var size = 0
 
     return {
