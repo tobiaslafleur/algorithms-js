@@ -1,0 +1,39 @@
+.grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+}
+
+.node {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 1px;
+}
+
+.unmarked {
+    box-shadow:inset 0px 0px 0px 1px gainsboro;
+}
+
+.marked {
+    background-color: turquoise;
+}
+
+.path {
+    background-color: rgb(240, 224, 3);
+}
+
+.start {
+    background-color: greenyellow;
+}
+
+.end {
+    background-color: indianred;
+}

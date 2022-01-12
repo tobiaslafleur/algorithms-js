@@ -32,7 +32,7 @@ module.exports = (totalVertices) => {
             adjacent[w].push(v)
             edges += 1
         },
-        adjacent: (v) => { return adjacent[v] },
+        adjacentEdges: (v) => { return adjacent[v] },
         adjacencyList: () => { return _adjacencyList() },
     }
 }
