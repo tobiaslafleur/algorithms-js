@@ -24,5 +24,6 @@ module.exports = () => {
         },
         peek: () => { return top },
         size: () => { return size },
+        isEmpty: () => { return top === undefined},
     }
 }
